@@ -4,8 +4,8 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "terraform-felipe-${var.account_number}"
+    bucket = "terraform-felipe-862040561963"
     key = "state/igti/edc/mod1/terraform.tfstate"
-    region = var.aws_region
+    region = "sa-east-1"
   }
 }
